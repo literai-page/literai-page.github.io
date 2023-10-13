@@ -1416,9 +1416,9 @@
       var page_about = false;      
 
       //###################### Story Page #######################
-      if(url.includes('com/story/') > 0 ) {
+      if(url.includes('io/story/') > 0 ) {
 
-        var url_id = url.split('com/story/')[1];  // Get ID from URL
+        var url_id = url.split('io/story/')[1];  // Get ID from URL
 
         if (url_id.slice(-1) == "/") {
           url_id = url_id.slice(0, -1);
@@ -1448,7 +1448,7 @@
         }
 
       //###################### New Story Page #######################
-      } else if(url.includes('com/new/') > 0 ) {
+      } else if(url.includes('io/new/') > 0 ) {
 
         if (loggedIn) {
           pagenew.style.display = "block";
@@ -1466,9 +1466,9 @@
         }
 
       //###################### Edit Story Page #######################
-      } else if(url.includes('com/edit/') > 0 ) {
+      } else if(url.includes('io/edit/') > 0 ) {
         
-        var url_id = url.split('com/edit/')[1];  // Get ID from URL
+        var url_id = url.split('io/edit/')[1];  // Get ID from URL
 
         if (url_id.slice(-1) == "/") {
           url_id = url_id.slice(0, -1);
@@ -1496,9 +1496,9 @@
 
 
       //###################### Delete Story Page #######################
-      } else if(url.includes('com/delete/') > 0 ) {
+      } else if(url.includes('io/delete/') > 0 ) {
         
-        var url_id = url.split('com/delete/')[1];  // Get ID from URL
+        var url_id = url.split('io/delete/')[1];  // Get ID from URL
 
         if (url_id.slice(-1) == "/") {
           url_id = url_id.slice(0, -1);
@@ -1527,13 +1527,13 @@
 
 
       //###################### Tutorial Page #######################
-      } else if(url.includes('com/tutorial/') > 0 ) {
+      } else if(url.includes('io/tutorial/') > 0 ) {
 
         pagetutorial.style.display = "block";
         var page_tutorial = true;
 
       //###################### About Page #######################
-      } else if(url.includes('com/about/') > 0 ) {
+      } else if(url.includes('io/about/') > 0 ) {
 
         pageabout.style.display = "block";
         var page_about = true;
